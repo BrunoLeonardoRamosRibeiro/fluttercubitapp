@@ -19,7 +19,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         state = await _fetchListWithEmptyList();
         break;
     }
-    yield state;
+    yield state as HomeState;
   }
 
   Future<HomeState> _fetchList() async {

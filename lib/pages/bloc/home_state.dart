@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
 
 class HomeState extends Equatable {
   @override
@@ -11,17 +10,17 @@ class HomeLoadingState extends HomeState {}
 class HomeErrorState extends HomeState {
   final String message;
 
-  HomeErrorState({@required this.message});
+  HomeErrorState({required this.message});
 }
 
 class HomeStateLoaded extends HomeState {
   final List<String> list;
 
-  HomeStateLoaded({@required this.list});
+  HomeStateLoaded({required this.list});
 }
 
 class HomeStateEmpty extends HomeState {
   final List<String> list;
 
-  HomeStateEmpty({@required this.list});
+  HomeStateEmpty({required this.list});
 }
